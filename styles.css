@@ -120,7 +120,7 @@ header {
   position: relative;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .menu-btn {
     display: block;
   }
