@@ -29,6 +29,10 @@ img {
   display: none;
 }
 
+.play-icon {
+  max-width: 5rem;
+}
+
 .hero-img {
   max-width: 31.25rem;
   transform: rotate(-2.36deg);
@@ -75,11 +79,56 @@ h1 span {
   display: block;
 }
 
+.section-about h2,
+.section-about h3 {
+  color: var(--clr-orangish);
+  font-family: "Bowlby One", sans-serif;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.045rem;
+  text-transform: uppercase;
+}
+
 .subtitle {
   color: #000;
+}
+
+.section-about p {
+  color: var(--clr-orangish);
+}
+
+.subtitle,
+.section-about p {
   font-size: clamp(1.125rem, 0.857rem + 0.714vw, 1.5rem);
   font-weight: 400;
   line-height: 150%;
+}
+
+figcaption {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h4 {
+  color: #fff;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.025rem;
+  text-transform: uppercase;
 }
 
 .browse-btn {
@@ -120,6 +169,20 @@ header {
   position: relative;
 }
 
+.video-container {
+  position: relative;
+}
+
+.play-container {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 @media screen and (max-width: 56.25rem) {
   .menu-btn {
     display: block;
@@ -147,6 +210,10 @@ header {
     margin-top: 1em;
   }
 
+  .play-icon {
+    max-width: 4rem;
+  }
+
   h1 span .smiley-icon {
     display: none;
   }
@@ -164,5 +231,11 @@ header {
     position: absolute;
     top: 5em;
     right: 1em;
+  }
+
+  .play-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
