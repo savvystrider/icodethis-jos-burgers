@@ -19,6 +19,21 @@ img {
   max-width: 100%;
 }
 
+figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+figure + img {
+  margin-top: 2em;
+}
+
+.video-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .smiley-icon {
   display: inline-block;
   max-width: 7.813rem;
@@ -36,6 +51,17 @@ img {
 .hero-img {
   max-width: 31.25rem;
   transform: rotate(-2.36deg);
+}
+
+#about > div > picture > img {
+  max-height: 37.5rem;
+}
+
+.organic-meats-logo {
+  max-width: 11.141rem;
+  position: relative;
+  top: -4rem;
+  left: 2rem;
 }
 
 .menu-btn {
@@ -107,7 +133,7 @@ h1 span {
 }
 
 figcaption {
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   color: #000;
   text-align: center;
@@ -129,6 +155,7 @@ h4 {
   line-height: 100%;
   letter-spacing: -0.025rem;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .browse-btn {
@@ -175,8 +202,8 @@ header {
 
 .play-container {
   position: absolute;
-  top: 35%;
-  left: 15%;
+  top: 40%;
+  left: 25%;
   transform: translate(50%, -50%);
   display: flex;
   align-items: center;
@@ -233,9 +260,14 @@ header {
     right: 1em;
   }
 
+  .organic-meats-logo {
+    max-width: 7.518rem;
+  }
+
   .play-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translate(-10%, -55%);
   }
 }
