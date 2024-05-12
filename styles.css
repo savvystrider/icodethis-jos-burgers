@@ -73,6 +73,15 @@ figure + img {
   max-width: 40rem;
 }
 
+.menu-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.ribbon {
+  width: 100%;
+}
+
 .menu-btn {
   display: none;
   cursor: pointer;
@@ -115,7 +124,8 @@ h1 span {
 }
 
 .section-about h2,
-.section-about h3 {
+.section-about h3,
+.section-menu h2 {
   color: var(--clr-orangish);
   font-family: "Bowlby One", sans-serif;
   font-size: 2rem;
@@ -130,19 +140,41 @@ h1 span {
   max-width: 60%;
 }
 
+.menu-item h3 {
+  color: #000;
+  font-family: "Bowlby One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.015rem;
+  text-transform: uppercase;
+}
+
 .subtitle {
   color: #000;
 }
 
-.section-about p {
+.section-about p,
+.section-menu p {
   color: var(--clr-orangish);
 }
 
 .subtitle,
-.section-about p {
+.section-about p,
+.section-menu p {
   font-size: clamp(1.125rem, 0.857rem + 0.714vw, 1.5rem);
   font-weight: 400;
   line-height: 150%;
+}
+
+.menu-item p {
+  color: #000;
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0;
 }
 
 figcaption {
@@ -209,8 +241,10 @@ header {
   position: relative;
 }
 
-.section-about {
+.section-about,
+.section-menu {
   padding: 1em 2em;
+  background: #f6f2f0;
 }
 
 .video-container {
@@ -247,6 +281,24 @@ header {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.menu-item {
+  text-align: center;
+  margin-block: 1em;
+  background: #fff;
+  flex: 1;
+}
+
+.menu-info {
+  padding: 1em;
 }
 
 @media screen and (max-width: 56.25rem) {
@@ -324,5 +376,9 @@ header {
 
   .row-big-gap {
     margin-bottom: 2em;
+  }
+
+  .menu-items {
+    display: block;
   }
 }
