@@ -23,6 +23,11 @@ figure {
   display: block;
   margin: 0;
   padding: 0;
+  max-width: 40rem;
+  position: relative;
+  bottom: -18em;
+  right: 30em;
+  z-index: -1;
 }
 
 figure + img {
@@ -62,6 +67,10 @@ figure + img {
   position: relative;
   top: -4rem;
   left: 2rem;
+}
+
+#about > div:nth-child(2) > img {
+  max-width: 40rem;
 }
 
 .menu-btn {
@@ -115,6 +124,10 @@ h1 span {
   line-height: 100%;
   letter-spacing: -0.045rem;
   text-transform: uppercase;
+}
+
+.row-big-gap h2 {
+  max-width: 60%;
 }
 
 .subtitle {
@@ -196,6 +209,10 @@ header {
   position: relative;
 }
 
+.section-about {
+  padding: 1em 2em;
+}
+
 .video-container {
   position: relative;
 }
@@ -208,6 +225,28 @@ header {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+.row {
+  display: flex;
+}
+
+.row-big-gap {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 22em;
+}
+
+.row-small-gap {
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+  margin-bottom: 3em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 56.25rem) {
@@ -241,6 +280,10 @@ header {
     max-width: 4rem;
   }
 
+  #about > div:nth-child(2) > img {
+    max-width: 17rem;
+  }
+
   h1 span .smiley-icon {
     display: none;
   }
@@ -269,5 +312,17 @@ header {
     justify-content: center;
     align-items: center;
     transform: translate(-10%, -55%);
+  }
+
+  .row {
+    display: block;
+  }
+
+  figure {
+    position: unset;
+  }
+
+  .row-big-gap {
+    margin-bottom: 2em;
   }
 }
