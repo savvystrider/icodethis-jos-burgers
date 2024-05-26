@@ -82,6 +82,11 @@ figure + img {
   width: 100%;
 }
 
+.avatar {
+  max-width: 3rem;
+  border-radius: 50%;
+}
+
 .menu-btn {
   display: none;
   cursor: pointer;
@@ -125,7 +130,8 @@ h1 span {
 
 .section-about h2,
 .section-about h3,
-.section-menu h2 {
+.section-menu h2,
+.section-reviews h2 {
   color: var(--clr-orangish);
   font-family: "Bowlby One", sans-serif;
   font-size: 2rem;
@@ -150,12 +156,25 @@ h1 span {
   text-transform: uppercase;
 }
 
+.reviewer {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: clamp(0.9rem, 0.607rem + 0.714vw, 1.25rem);
+}
+
+.reviewer + p {
+  font-weight: 400;
+}
+
 .subtitle {
   color: #000;
 }
 
 .section-about p,
-.section-menu p {
+.section-menu p,
+.section-menu,
+.reviews-heading p {
   color: var(--clr-orangish);
 }
 
@@ -218,6 +237,10 @@ h4 {
   margin-block: 1em;
 }
 
+.load-btn {
+  display: none;
+}
+
 .container {
   padding: 1em;
 }
@@ -242,7 +265,8 @@ header {
 }
 
 .section-about,
-.section-menu {
+.section-menu,
+.section-reviews {
   padding: 1em 2em;
   background: #f6f2f0;
 }
@@ -299,6 +323,25 @@ header {
 
 .menu-info {
   padding: 1em;
+}
+
+.reviews-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+}
+
+.review {
+  padding: 1em;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.review:first-of-type {
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 56.25rem) {
@@ -380,5 +423,26 @@ header {
 
   .menu-items {
     display: block;
+  }
+
+  .load-btn {
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    padding: 0.75rem 4rem;
+  }
+
+  .reviews-row {
+    display: flex;
+    flex-direction: column;
   }
 }
