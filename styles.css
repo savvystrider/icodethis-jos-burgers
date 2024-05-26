@@ -445,4 +445,17 @@ header {
     display: flex;
     flex-direction: column;
   }
+
+  .additional-reviews {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.23s ease-in;
+  }
+
+  .additional-reviews.active {
+    visibility: unset;
+    height: fit-content;
+    opacity: 1;
+  }
 }

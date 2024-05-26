@@ -16,3 +16,11 @@ toggleBtn.addEventListener("click", function () {
       .setAttribute("src", "./images/close-btn.svg");
   }
 });
+
+const loadBtn = document.querySelector(".load-btn");
+const additionalReviews = document.querySelector(".additional-reviews");
+
+loadBtn.addEventListener("click", function () {
+  additionalReviews.classList.toggle("active");
+  this.style.display = "none";
+});
