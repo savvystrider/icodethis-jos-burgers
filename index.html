@@ -1,164 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Jo's Burgers</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <img src="./images/logo.svg" alt="Jo's Burgers logo" class="logo" />
-        <nav role="navigation" class="main-nav">
-          <button
-            id="toggle-btn"
-            class="btn menu-btn"
-            aria-expanded="false"
-            aria-controls="menu"
-          >
-            <img src="./images/menu-btn.svg" alt="menu button" />
-          </button>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#social">Social</a></li>
-            <li>
-              <img
-                src="./images/smiley.svg"
-                alt="Voted people's favorite burger in New York"
-                class="smiley-icon-mobile"
-              />
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section id="hero" class="section-hero">
-        <div class="hero-left">
-          <h1>
-            <span>New York's</span>
-            <span>
-              Favorite<img
-                src="./images/smiley.svg"
-                alt="Voted people's favorite burger in New York"
-                class="smiley-icon"
-            /></span>
-            <span>Burger</span>
-          </h1>
-          <p class="subtitle">
-            In a world so painfully serious, yet so ridiculous, you knew it was
-            only a matter of time before plant-based steak became a thing.
-          </p>
-          <button class="btn browse-btn">Browse Menu</button>
-        </div>
-        <img
-          src="./images/pexels-alleksana-7497224 1.jpg"
-          alt="a burger with a fluffy bun"
-          class="hero-img"
-        />
-      </section>
-      <section id="about" class="section-about">
-        <div class="row row-big-gap">
-        <h2>
-          Hi, We’re Jo’s Burgers, a collective of creators who Love burger and
-          good mood.
-        </h2>
-        <figure>
-          <img
-            src="./images/caleb-lebourgeois-ABYdHc5CNzA-unsplash 1.jpg"
-            alt="cook at a burger restaurant"
-          />
-          <figcaption>
-            This is Jo. He started everything 40 years ago.
-          </figcaption>
-        </figure>
-        </div>
-        <div class="row row-small-gap">
-        <img
-          src="./images/simona-sergi-k5Pf8OSA7xo-unsplash 1.jpg"
-          alt="a sign that says We Are Open Until Closed"
-        />
-        <div class="column">
-        <h3>Food is for everyone.</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        </div>
-        </div>
-        <div class="video-container">
-          <picture>
-            <source
-              media="(max-width: 56.25rem)"
-              srcset="./images/simona-sergi-CLn3Egvg8oc-unsplash-1-mobile.jpg"
-            />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Oswald:wght@200..700&display=swap"
+         rel="stylesheet"
+         />
+      <title>Jo's Burgers</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <img src="./images/logo.svg" alt="Jo's Burgers logo" class="logo" />
+            <nav role="navigation" class="main-nav">
+               <button
+                  id="toggle-btn"
+                  class="btn menu-btn"
+                  aria-expanded="false"
+                  aria-controls="menu"
+                  >
+               <img src="./images/menu-btn.svg" alt="menu button" />
+               </button>
+               <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#reviews">Reviews</a></li>
+                  <li><a href="#social">Social</a></li>
+                  <li>
+                     <img
+                        src="./images/smiley.svg"
+                        alt="Voted people's favorite burger in New York"
+                        class="smiley-icon-mobile"
+                        />
+                  </li>
+               </ul>
+            </nav>
+         </header>
+         <section id="hero" class="section-hero">
+            <div class="hero-left">
+               <h1>
+                  <span>New York's</span>
+                  <span>
+                  Favorite<img
+                     src="./images/smiley.svg"
+                     alt="Voted people's favorite burger in New York"
+                     class="smiley-icon"
+                     /></span>
+                  <span>Burger</span>
+               </h1>
+               <p class="subtitle">
+                  In a world so painfully serious, yet so ridiculous, you knew it was
+                  only a matter of time before plant-based steak became a thing.
+               </p>
+               <button class="btn browse-btn">Browse Menu</button>
+            </div>
             <img
-              src="./images/simona-sergi-CLn3Egvg8oc-unsplash 1.jpg"
-              alt="black and white photo of staff at a restaurant"
-            />
-          </picture>
-          <div class="play-container">
-            <h4>We're different</h3>
-            <img
-              src="./images/play-icon.svg"
-              alt="play icon"
-              class="play-icon"
-            />
-          </div>
-          <img
-            src="./images/organic-meats-logo.svg"
-            alt="Organic Meats logo"
-            class="organic-meats-logo"
-          />
-        </div>
-      </section>
-      <section id="menu" class="section-menu">
-        <div class="menu-heading">
-        <h2>Our Burgers</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="menu-items">
-          <div class="menu-item">
-            <img src="./images/pexels-alleksana-7497224-1.jpg" alt="Shrimp Yo burger" class="menu-img">
-            <div class="menu-info">
-              <h3>Shrimp Yo!</h3>
-              <p class="menu-description">Grilled shrimp burger with coleslaw in a homemade fluffy bun</p>
+               src="./images/pexels-alleksana-7497224 1.jpg"
+               alt="a burger with a fluffy bun"
+               class="hero-img"
+               />
+         </section>
+         <section id="about" class="section-about">
+            <div class="row row-big-gap">
+               <h2>
+                  Hi, We’re Jo’s Burgers, a collective of creators who Love burger and
+                  good mood.
+               </h2>
+               <figure>
+                  <img
+                     src="./images/caleb-lebourgeois-ABYdHc5CNzA-unsplash 1.jpg"
+                     alt="cook at a burger restaurant"
+                     />
+                  <figcaption>
+                     This is Jo. He started everything 40 years ago.
+                  </figcaption>
+               </figure>
             </div>
-          </div>
-          <div class="menu-item">
-            <img src="./images\pexels-adrian-dorobantu-2089717 1.jpg" alt="Double Trouble burger" class="menu-img">
-            <div class="menu-info">
-              <h3>Double Trouble</h3>
-              <p class="menu-description">Angus Beef burger with Gouda cheese and bacon in a sesame bun.</p>
+            <div class="row row-small-gap">
+               <img
+                  src="./images/simona-sergi-k5Pf8OSA7xo-unsplash 1.jpg"
+                  alt="a sign that says We Are Open Until Closed"
+                  />
+               <div class="column">
+                  <h3>Food is for everyone.</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.
+                  </p>
+               </div>
             </div>
-          </div>
-          <div class="menu-item">
-            <img src="./images\pexels-jonathan-borba-2983104 1.jpg" alt="Juicy Jo burger" class="menu-img">
-            <div class="menu-info">
-              <h3>Juicy Jo</h3>
-              <p class="menu-description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+            <div class="video-container">
+               <picture>
+                  <source
+                     media="(max-width: 56.25rem)"
+                     srcset="./images/simona-sergi-CLn3Egvg8oc-unsplash-1-mobile.jpg"
+                     />
+                  <img
+                     src="./images/simona-sergi-CLn3Egvg8oc-unsplash 1.jpg"
+                     alt="black and white photo of staff at a restaurant"
+                     />
+               </picture>
+               <div class="play-container">
+                  <h4>
+                  We're different</h3>
+                  <img
+                     src="./images/play-icon.svg"
+                     alt="play icon"
+                     class="play-icon"
+                     />
+               </div>
+               <img
+                  src="./images/organic-meats-logo.svg"
+                  alt="Organic Meats logo"
+                  class="organic-meats-logo"
+                  />
             </div>
-          </div>
-          <div class="menu-item">
-            <img src="./images\pexels-enesfi̇lm-8130752 1.png" alt="Crispy Chi burger" class="menu-img">
-            <div class="menu-info">
-              <h3>Crispy Chi</h3>
-              <p class="menu-description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+         </section>
+         <section id="menu" class="section-menu">
+            <div class="menu-heading">
+               <h2>Our Burgers</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-          </div>
-        </div>
-        <img src="./images/ribbon.svg" alt="Life is too short to eat just salads" class="ribbon">
-      </section>
-    </div>
-    <script src="app.js"></script>
-  </body>
+            <div class="menu-items">
+               <div class="menu-item">
+                  <img src="./images/pexels-alleksana-7497224-1.jpg" alt="Shrimp Yo burger" class="menu-img">
+                  <div class="menu-info">
+                     <h3>Shrimp Yo!</h3>
+                     <p class="menu-description">Grilled shrimp burger with coleslaw in a homemade fluffy bun</p>
+                  </div>
+               </div>
+               <div class="menu-item">
+                  <img src="./images\pexels-adrian-dorobantu-2089717 1.jpg" alt="Double Trouble burger" class="menu-img">
+                  <div class="menu-info">
+                     <h3>Double Trouble</h3>
+                     <p class="menu-description">Angus Beef burger with Gouda cheese and bacon in a sesame bun.</p>
+                  </div>
+               </div>
+               <div class="menu-item">
+                  <img src="./images\pexels-jonathan-borba-2983104 1.jpg" alt="Juicy Jo burger" class="menu-img">
+                  <div class="menu-info">
+                     <h3>Juicy Jo</h3>
+                     <p class="menu-description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+                  </div>
+               </div>
+               <div class="menu-item">
+                  <img src="./images\pexels-enesfi̇lm-8130752 1.png" alt="Crispy Chi burger" class="menu-img">
+                  <div class="menu-info">
+                     <h3>Crispy Chi</h3>
+                     <p class="menu-description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+                  </div>
+               </div>
+            </div>
+            <img src="./images/ribbon.svg" alt="Life is too short to eat just salads" class="ribbon">
+         </section>
+         <section id="reviews" class="section-reviews">
+            <div class="reviews-heading">
+               <h2>Some Reviews</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="reviews-container">
+               <div class="reviews-row">
+                  <div class="review">
+                     <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/400?img=70" alt="avatar" class="avatar">
+                     </div>
+                     <div class="review-info">
+                        <h3 class="reviewer">UIDELI.COM</h3>
+                        <p class="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     </div>
+                  </div>
+                  <div class="review">
+                     <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/400?img=49" alt="avatar" class="avatar">
+                     </div>
+                     <div class="review-info">
+                        <h3 class="reviewer">Andreea @eattwice</h3>
+                        <p class="review-content">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     </div>
+                  </div>
+                  <div class="review">
+                     <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/400?img=60" alt="avatar" class="avatar">
+                     </div>
+                     <div class="review-info">
+                        <h3 class="reviewer">Mathew eats all</h3>
+                        <p class="review-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <p class="review-content">Just the best in town. Try it!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="btn more-btn">Learn more</button>
+         </section>
+      </div>
+      <script src="app.js"></script>
+   </body>
 </html>
