@@ -366,7 +366,6 @@ footer {
   align-items: center;
   gap: 0;
   flex-wrap: wrap;
-  /* overflow: hidden; */
 }
 
 .footer-image-container img,
@@ -428,16 +427,25 @@ label {
   background-color: black;
 }
 
+.footer-nav {
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+
+.footer-nav a {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 56.25rem) {
   .menu-btn {
     display: block;
   }
 
-  nav ul {
+  header nav ul {
     display: none;
   }
 
-  nav ul.active {
+  header nav ul.active {
     padding-top: 2em;
     display: flex;
     flex-direction: column;
@@ -556,5 +564,30 @@ label {
     padding: 1em;
     column-gap: 1em;
     row-gap: 1em;
+  }
+
+  .footer-content {
+    display: block;
+  }
+
+  .col-row ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav ul {
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .input-container {
+    justify-content: center;
+    padding: 1em;
+  }
+
+  input {
+    padding-right: 4em;
   }
 }
