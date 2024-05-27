@@ -156,6 +156,18 @@ h1 span {
   text-transform: uppercase;
 }
 
+.column p {
+  color: #000;
+  font-family: "Bowlby One";
+  font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
 .reviewer {
   text-transform: uppercase;
   font-weight: 600;
@@ -344,6 +356,78 @@ header {
   margin-top: 1em;
 }
 
+footer {
+  background-color: var(--clr-orangish);
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+}
+
+.footer-image-container img,
+.follow-box {
+  aspect-ratio: 1;
+  flex: 1;
+  object-fit: cover;
+  max-width: 30rem;
+  max-height: 29rem;
+}
+
+.follow-box {
+  background-color: #eef866;
+  color: var(--clr-orangish);
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  padding: 1em;
+  font-weight: 600;
+}
+
+.footer-content {
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-block: 1em;
+}
+
+input {
+  display: inline-block;
+  padding: 1em 8em 1em 1em;
+}
+
+::placeholder {
+  color: #000;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+label {
+  display: inline-block;
+  font-family: inherit;
+  padding: 0.4em 1em;
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+  background-color: black;
+}
+
 @media screen and (max-width: 56.25rem) {
   .menu-btn {
     display: block;
@@ -457,5 +541,20 @@ header {
     visibility: unset;
     height: fit-content;
     opacity: 1;
+  }
+
+  .footer-image-container img,
+  .follow-box {
+    max-width: 15rem;
+    max-height: 14rem;
+  }
+
+  .footer-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 1em;
+    column-gap: 1em;
+    row-gap: 1em;
   }
 }
